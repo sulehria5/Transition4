@@ -1,0 +1,31 @@
+section{
+    position: relative;
+}
+.red {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    left: 0;
+    transition:left 2s ease-in;
+    
+}
+.red:active{
+    left: 44%;
+}
+.blue{
+    position: absolute;
+    height: 80px;
+    width:50px;
+    left: 20%;
+    background-color: blue;
+    border-radius: 50%;
+    transition-delay: 1s;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+}
+.red:active ~ .blue{
+    left: 98%;
+    
+}
